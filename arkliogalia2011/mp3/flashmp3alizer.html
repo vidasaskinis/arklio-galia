@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+
+<head>
+	<title>FlashMP3alizer: Simple example</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<!-- include the two lines below in your html file -->
+	<script type="text/javascript" language="javascript" src="niftyplayer.js"></script>
+	<script type="text/javascript" language="javascript" src="flashmp3alizerconf.js"></script>
+	<script type="text/javascript" language="javascript" src="flashmp3alizer.js"></script>
+</head>
+<body>
+
+<div class="mainwrapper">
+	<div class="title">
+		<h1>FlashMP3alizer </h1>
+		<div class="caption">An Automatic MP3 Player that Pops-up</div>
+	</div>
+
+	<h2>Demo</h2>
+	<div class="sectiontext">
+
+		<p>Below are some regular links, with no mention of JavaScripting at all. The code for the first link, for example, is <code>&lt;a href="betty.mp3"&gt;betty&lt;/a&gt;</code>.</p>
+		<p><b>Click randomly on a bunch of them to see what happens.</b></p>
+
+		<a href="betty.mp3">betty</a>
+		<a href="creeeeak.mp3">creeeeak</a>
+		<a href="creeeeak.mp3">creeeeak again</a>
+		<a href="creeeeak.mp3">creeeeak yet again</a>
+
+		<p>(I repeated the same file several times because of bandwith, but you can link as many files as you want)</p>
+
+		<p>What this script does is convert regular links to mp3 files into something you can click to queue a song up and right click and choose "save as" to download.</p>
+	</div>
+
+
+	<h2>Usage</h2>
+	<div class="sectiontext">
+
+		<ol>
+			<li>Download and unzip the <a href="flashmp3alizer.zip">FlashMP3alizer</a> and <a href="niftyplayer.zip">NiftyPlayer</a>.</li>
+			<li>Add the lines below to your HTML file:
+				<pre>
+&lt;script type="text/javascript" language="javascript" src="niftyplayer.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" language="javascript" src="flashmp3alizerconf.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" language="javascript" src="flashmp3alizer.js"&gt;&lt;/script&gt;</pre>
+			</li>
+			<li>Edit flashmp3alizerconf.js to make sure playlistFile points to where playlist.html is in your system</li>
+			<li>Optional: If you know HTML and CSS, customize playlist.html to fit your taste</li>
+		</ol>
+	</div>
+
+	<h2>Wishlist:</h2>
+	<div class="sectiontext">
+		<ol>
+			<li><del>Make it work in IE</del> done! (version 0.2)</li>
+			<li><del>Make the popup reusable when you change site and leave the popup open.</del> done! (version 0.3)</li>
+			<li>Add more options, like "play all", and "play all files in selection"</li>
+			<li>Add a "clear" button</li>
+			<li>Make the playlist songs moveable</li>
+			<li>Make it work without a popup (if desired, as per the configuration file)</li>
+			<li>Allow preset playlists -- although i have to figure out how to implement this one: i'm thinking about using divs to separate the different playlists or something like that.</li>
+			<li>Make the niftyplayer read an xml file with color information, so you can match your site's theme</li>
+			<li>Id3 support would be good</li>
+		</ol>
+	</div>
+
+	<h2>Download</h2>
+	<div class="sectiontext">
+
+		<p>(This script is licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>, which, to put it in non-legal terms, allows you to share, use and modify it. Even for commercial purposes. Check out the <a href="http://en.wikipedia.org/wiki/Mit_license">Wikipedia article</a> on this license for more.)</p>
+
+		<p><a href="flashmp3alizer.zip"><b>Get FlashMP3alizer here</b></a>.</p>
+		<p>You will also need <a href="niftyplayer.zip"><b>NiftyPlayer</b></a>.</p>
+	</div>
+
+	<h2>News</h2>
+	<div class="sectiontext">
+		<p>I fixed a major bug, so i bumped it to version 0.4. The bug was in the way i was loading the script, which would sometimes happen BEFORE the page was completely loaded, causing things to royally screw.</p>
+		<p>Whoever was using this script with the useOnLoad set to "true", should now try with "false" and tell me if it works. The useOnLoad method is a sure-thing way of doing things, but it's much slower for image-heavy pages than the way i have now.</p>
+		<p>If you can't be bothered with this jibbajabba, just plug the scripts right before the &lt;/body&gt; tag (and set useOnLoad:false). This is the ugly way of fixing any bugs I may eventually find in my new loading script.</p>
+		<p>Now with "News" section!</p>
+	</div>
+			
+	<div class="return">
+		<a href="http://www.varal.org/niftyplayer">Return to niftyPlayer's website</a>
+	</div>
+</div>
+</body>
+</html>

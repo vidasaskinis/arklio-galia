@@ -1,0 +1,106 @@
+A:link {
+	COLOR: #003399
+}
+A:visited {
+	COLOR: #003399
+}
+A:active {
+	COLOR: #ff3300
+}
+A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+A.w-topnav:link {
+	COLOR: #ffffff; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.w-topnav:visited {
+	COLOR: #ffffff; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.w-topnav:active {
+	COLOR: #ffcc00; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.w-topnav:hover {
+	COLOR: #99ff33; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.whitelink:link {
+	COLOR: #ffffff; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.whitelink:visited {
+	COLOR: #ffffff; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.whitelink:active {
+	COLOR: #ffcc00; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.whitelink:hover {
+	COLOR: #99ff33; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.tekstasbliat {
+	COLOR: #000000; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+
+DIV {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+FONT {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+LI {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+UL {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.lg-header {
+	FONT: bold 24pt Arial, Helvetica, sans-serif
+}
+.lg-subhead {
+	FONT: bold 16pt Arial, Helvetica, sans-serif
+}
+.body {
+	FONT: 10pt Arial, Helvetica, sans-serif
+}
+.size-07pt {
+	FONT: 7pt Arial, Helvetica, sans-serif
+}
+.size-08pt {
+	FONT: 8pt Arial, Helvetica, sans-serif
+}
+.size-09pt {
+	FONT: 9pt Arial, Helvetica, sans-serif
+}
+.size-10pt {
+	FONT: 10pt Arial, Helvetica, sans-serif
+}
+.size-12pt {
+	FONT: 12pt Arial, Helvetica, sans-serif
+}
+.size-14pt {
+	FONT: 14pt Arial, Helvetica, sans-serif
+}
+.gold-header {
+	COLOR: #888858; FONT: 16pt Arial, Helvetica, sans-serif
+}
+.gold-subhead {
+	COLOR: #888858; FONT: 12pt Arial, Helvetica, sans-serif
+}
+.gold-smtitle {
+	COLOR: #888858; FONT: 8pt Arial, Helvetica, sans-serif
+}
+.gold-smtitlebold {
+	COLOR: #888858; FONT: bold 9pt Arial, Helvetica, sans-serif
+}
+.white-header {
+	COLOR: #ffffff; FONT: 16pt Arial, Helvetica, sans-serif
+}
+.white-smtitle {
+	COLOR: #ffffff; FONT: bold 8pt Arial, Helvetica, sans-serif
+}
+.white-smbody {
+	COLOR: #ffffff; FONT: 8pt Arial, Helvetica, sans-serif
+}

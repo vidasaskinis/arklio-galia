@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+
+	<head>
+		<title>Magnitafonas</title>
+		<link rel="stylesheet" type="text/css" href="playlist.css" />
+		<script type="text/javascript" language="javascript" src="niftyplayer.js"></script>
+		<script type="text/javascript" language="javascript" src="flashmp3alizerconf.js"></script>
+		<script type="text/javascript" language="javascript" src="flashmp3alizer.js"></script>
+	</head>
+	<body bgcolor="#E4923F" background="vidis.gif">
+		<div id="FMrPlayerDiv">
+
+			<!-- the IDs of the object and embed below must be the same as in flashmp3alizerconf.js -->
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="165" height="37" id="FMrPlayer" align="">
+				<param name=movie value="niftyplayer.swf?as=0">
+				<param name=quality value=high>
+				<param name=bgcolor value=#E4923F>
+				<embed src="niftyplayer.swf?as=0" quality=high bgcolor=#E4923F width="165" height="37" name="FMrPlayer" align="" type="application/x-shockwave-flash" swLiveConnect="true" pluginspage="http://www.macromedia.com/go/getflashplayer">
+			</embed></object>
+
+		</div>
+
+		<div id="FMrControls">
+			<a href="javascript:FMr.prev()">praeita</a>
+			<a href="javascript:FMr.next()">sekanti</a>
+		</div>
+
+		<!-- the ID below must be the same as in flashmp3alizerconf.js -->
+		<ol id="FMrPlaylist">
+		</ol>
+	</body>
+</html>

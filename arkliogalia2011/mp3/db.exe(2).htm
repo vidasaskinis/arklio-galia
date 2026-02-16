@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TagTooga - Discovering and Organizing the Best of the Web</title>
+<meta name="description" content="Discover the Best of the Web, Add your Site, and Organize your Bookmarks with TagTooga.com - a Web 2.0 Social Bookmarking / Wiki" />
+
+<link href="/css/tagtooga.css" rel="stylesheet" type="text/css" />
+<script src="/js/tagtooga9.js"></script>
+</head>
+<body onLoad="ttInit()">
+<div id="wrapper">
+<div id="banner">
+<img src="/images/logoSmall.gif" />
+<div id="topnav"><ul>
+<li><a href="javascript:defaultPage()">Home</a></li
+><li><a title="View Complete Category List" href="javascript:listCats('.')">Categories</a></li
+><li><a href="javascript:shDomForm()">Domains</a></li
+></ul>
+</div>
+<form name="searchForm" action="javascript:submitSearch()" method="post">
+<input id="textbox" type="text" name="terms" value="" />
+<input id="submit" type="submit" name="Submit" value="Search" />
+</form><span id="searchWait"></span>
+</div><!-- End banner -->
+<div id="hLinks"><p id="loggedIn">Welcome, 78.61.194.187 &nbsp;&nbsp;&nbsp;<img src="/images/tagline.gif" border=0 />&nbsp;&nbsp;</p></div>
+<div id="content">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="tdNav"><div id="leftRail">
+<p id="hd">My Categories</p><p id="it"><a href="javascript:listTags2('blogs','.','0')"><img title="Tags" src="/images/plus8.gif" border=0 /></a>&nbsp;&nbsp;<a id="nav" href="javascript:selectCat('blogs')">blogs</a></p><p id="selCat"><a href="javascript:listTags2('news','.','0')"><img title="Tags" src="/images/plus8.gif" border=0 /></a>&nbsp;&nbsp;&#187;<a id="nav" href="javascript:;">news</a></p>
+<p id="hd">My news Tags</p><p id="rmit"><a href="javascript:rmMyCat('news')">REMOVE ALL</a></p><p id="it"><a href="javascript:rmTag('news','financial','0')"><img title="Remove Tag" src="/images/minus8.gif" border=0 /></a>&nbsp;<a id="nav" href="javaScript:showTag('news','financial')">financial</a></p><p id="it"><a href="javascript:rmTag('news','major newspapers','0')"><img title="Remove Tag" src="/images/minus8.gif" border=0 /></a>&nbsp;<a id="nav" href="javaScript:showTag('news','major newspapers')">major newspapers</a></p>
+<p id="hd">My Account</p>
+<p id="it"><a id="nav" href="javascript:xpDiv('c=settings','mainWrap')">Settings</a></p>
+<p id="it"><a id="nav" href="/tapp/db.exe?c=logout">Logout</a></p>
+<p id="it"><br /><br /><a id="nav" href="javascript:xpDiv('c=help','mainWrap')">Help</a></p>
+
+
+
+<p>&nbsp;</p></div></td>
+    <td id="tdMain"><div style="margin: 5px;" id="dig"></div><div id="mainWrap"><table>
+<tr>
+<td>
+<h1 id="h1g">Discover</h1>
+<p>great sites difficult to find in search engines by browsing categories.</p>
+</td>
+<td>
+<h1 id="h1g">Add</h1>
+<p>your site and be listed immediately. <a href="http://www.tagtooga.com/tapp/db.exe?c=pg&f=addUrl">more info...</a></p>
+</td>
+<td>
+<h1 id="h1g">Keep</h1>
+<p>your favorite links in a place that can be accessed from any computer.</p>
+</td>
+</tr>
+</table>
+<table>
+<tr><td valign="top">
+<h2 id="h2fp">Recent Tags</h2>
+<p id="recT"><a href="/health/professional+help/img"><img src="/images/mag.gif" border=0 /></a> <a href="/health/professional+help">health / professional help</a></p><p id="recT"><a href="/photography/commercial+art/img"><img src="/images/mag.gif" border=0 /></a> <a href="/photography/commercial+art">photography / commercial art</a></p><p id="recT"><a href="/outdoors/girls+camp/img"><img src="/images/mag.gif" border=0 /></a> <a href="/outdoors/girls+camp">outdoors / girls camp</a></p><p id="recT"><a href="/user_5Felectronicbenton/myspace+21/img"><img src="/images/mag.gif" border=0 /></a> <a href="/user_5Felectronicbenton/myspace+21">user_electronicbenton / myspace 21</a></p><p id="recT"><a href="/caribbean/island+jewelry/img"><img src="/images/mag.gif" border=0 /></a> <a href="/caribbean/island+jewelry">caribbean / island jewelry</a></p><p id="recT"><a href="/entertainment/environmental+images/img"><img src="/images/mag.gif" border=0 /></a> <a href="/entertainment/environmental+images">entertainment / environmental images</a></p><p id="recT"><a href="/law/kentucky+police/img"><img src="/images/mag.gif" border=0 /></a> <a href="/law/kentucky+police">law / kentucky police</a></p><p id="recT"><a href="/clothing/chevy/img"><img src="/images/mag.gif" border=0 /></a> <a href="/clothing/chevy">clothing / chevy</a></p><p id="recT"><a href="/music/pipeband/img"><img src="/images/mag.gif" border=0 /></a> <a href="/music/pipeband">music / pipeband</a></p><p id="recT"><a href="/jewelry/longines+watches/img"><img src="/images/mag.gif" border=0 /></a> <a href="/jewelry/longines+watches">jewelry / longines watches</a></p><p id="recT"><a href="/sports/ranch+resort/img"><img src="/images/mag.gif" border=0 /></a> <a href="/sports/ranch+resort">sports / ranch resort</a></p><p id="recT"><a href="/law/business+class/img"><img src="/images/mag.gif" border=0 /></a> <a href="/law/business+class">law / business class</a></p><p id="recT"><a href="/clothing/junior+clothes/img"><img src="/images/mag.gif" border=0 /></a> <a href="/clothing/junior+clothes">clothing / junior clothes</a></p><p id="recT"><a href="/collector/star+addresses/img"><img src="/images/mag.gif" border=0 /></a> <a href="/collector/star+addresses">collector / star addresses</a></p><p id="recT"><a href="/software/accounting+consulting/img"><img src="/images/mag.gif" border=0 /></a> <a href="/software/accounting+consulting">software / accounting consulting</a></p><p id="recT"><a href="/blog/blogging/img"><img src="/images/mag.gif" border=0 /></a> <a href="/blog/blogging">blog / blogging</a></p>
+</td><td valign="top" width="350">
+<h2 id="h2fp">Hot Tags</h2>
+<p id="recT"><a href="/printing/press+equipment/img"><img src="/images/mag.gif" border=0 /></a> <b>[97]</b> <a href="/printing/press+equipment">printing / press equipment</a></p><p id="recT"><a href="/printing/used+presses/img"><img src="/images/mag.gif" border=0 /></a> <b>[97]</b> <a href="/printing/used+presses">printing / used presses</a></p><p id="recT"><a href="/building/plans+blueprints/img"><img src="/images/mag.gif" border=0 /></a> <b>[91]</b> <a href="/building/plans+blueprints">building / plans blueprints</a></p><p id="recT"><a href="/printing/car+graphic/img"><img src="/images/mag.gif" border=0 /></a> <b>[85]</b> <a href="/printing/car+graphic">printing / car graphic</a></p><p id="recT"><a href="/building/patio+door/img"><img src="/images/mag.gif" border=0 /></a> <b>[84]</b> <a href="/building/patio+door">building / patio door</a></p><p id="recT"><a href="/caribbean/rent+house/img"><img src="/images/mag.gif" border=0 /></a> <b>[83]</b> <a href="/caribbean/rent+house">caribbean / rent house</a></p><p id="recT"><a href="/building/kit+house/img"><img src="/images/mag.gif" border=0 /></a> <b>[82]</b> <a href="/building/kit+house">building / kit house</a></p><p id="recT"><a href="/printing/offset+presses/img"><img src="/images/mag.gif" border=0 /></a> <b>[81]</b> <a href="/printing/offset+presses">printing / offset presses</a></p><p id="recT"><a href="/financial/internet+checking/img"><img src="/images/mag.gif" border=0 /></a> <b>[81]</b> <a href="/financial/internet+checking">financial / internet checking</a></p><p id="recT"><a href="/textiles/upholstery+fabric/img"><img src="/images/mag.gif" border=0 /></a> <b>[81]</b> <a href="/textiles/upholstery+fabric">textiles / upholstery fabric</a></p><p id="recT"><a href="/telecom/tower+installation/img"><img src="/images/mag.gif" border=0 /></a> <b>[81]</b> <a href="/telecom/tower+installation">telecom / tower installation</a></p><p id="recT"><a href="/agriculture/bandsaw+mill/img"><img src="/images/mag.gif" border=0 /></a> <b>[79]</b> <a href="/agriculture/bandsaw+mill">agriculture / bandsaw mill</a></p><p id="recT"><a href="/building/backhoe/img"><img src="/images/mag.gif" border=0 /></a> <b>[76]</b> <a href="/building/backhoe">building / backhoe</a></p><p id="recT"><a href="/advertising/mail+advertising/img"><img src="/images/mag.gif" border=0 /></a> <b>[72]</b> <a href="/advertising/mail+advertising">advertising / mail advertising</a></p><p id="recT"><a href="/printing/used+press/img"><img src="/images/mag.gif" border=0 /></a> <b>[70]</b> <a href="/printing/used+press">printing / used press</a></p><p id="recT"><a href="/printing/used+equipment/img"><img src="/images/mag.gif" border=0 /></a> <b>[67]</b> <a href="/printing/used+equipment">printing / used equipment</a></p>
+</td>
+</tr>
+</table>
+<div id="gStarted">
+<script>
+	var ua = navigator.userAgent;
+	var url = "javascript:window.location='http://www.tagtooga.com/tapp/db.exe?c=jsEntryForm&b=ie&url='+encodeURIComponent(document.location.href)";
+	
+	if (ua.indexOf('Firefox') != -1)
+	{
+		url = "javascript:d=document;desc = '';var ma = d.getElementsByName('description'); if (ma.length > 0) { desc = ma[0].content; }  w = window.open('http://www.tagtooga.com/tapp/db.exe?c=jsEntryForm&b=fx&popup=1&desc='+encodeURIComponent(desc)+'&title='+encodeURIComponent(d.title)+'&url='+encodeURIComponent(d.location.href),'_blank','width=590,height=460,status=no,resizable=yes,scrollbars=auto');void(window.setTimeout('w.focus()',200));";
+		
+	}
+	
+	document.write('<h2>Add a TagTooga Toolbar Button</h2>');
+	document.write('<p>Buttons (bookmarklets) are links you add to your browser\'s Bookmarks Toolbar. They are an easy way to post and view your bookmarks.</p>');
+		
+	if (ua.indexOf('Firefox') != -1)
+	{
+		
+		document.write('<p>To add a bookmarklet, drag the "TagTooga" link (below) to your browser\'s toolbar:</p>');
+		document.write('<h3>');
+		
+		document.write('<a title="Save the Current Browser Web Page" href="'+url+'">&lt;&lt;TagTooga&gt;&gt;</a><br />');
+		document.write('</h3>');
+		
+		document.write('<p>You may click the "TagTooga" button in your toolbar at any time to save the current page displayed in your browser.</p>');
+
+		document.write('<p><center><b><a href="javascript:fxSteps();">Step-by-step instructions</a></b></center></p>');
+
+	}
+	else
+	{
+		document.write('<p>Add the "TagTooga" link to your browser\'s toolbar by following these <a href="javascript:ieSteps();">instructions</a>.</p>');
+	}
+		
+</script>
+</div>
+</div></td>
+    <td id="tdBar">
+    <p style="text-align: center;" id="hd">Quick Links</p><p style="text-align: center;" id="rmit"><a href="javascript:rmAllQ()">REMOVE ALL in A</a></p><div style="margin-left: 0; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; float: left; "><div id="selQ"><a href="javascript:;">A</a></div>
+<div id="ltabs"><a href="javascript:selQ('b')">B</a></div>
+<div id="ltabs"><a href="javascript:selQ('c')">C</a></div>
+<div id="ltabs"><a href="javascript:selQ('d')">D</a></div>
+<div id="ltabs"><a href="javascript:selQ('e')">E</a></div>
+<div id="ltabs"><a href="javascript:selQ('f')">F</a></div>
+<div id="ltabs"><a href="javascript:selQ('g')">G</a></div>
+<div id="ltabs"><a href="javascript:selQ('h')">H</a></div>
+<div id="ltabs"><a href="javascript:selQ('i')">I</a></div>
+<div id="ltabs"><a href="javascript:selQ('j')">J</a></div>
+<div id="ltabs"><a href="javascript:selQ('k')">K</a></div>
+<div id="ltabs"><a href="javascript:selQ('l')">L</a></div>
+<div id="ltabs"><a href="javascript:selQ('m')">M</a></div>
+<div id="ltabs"><a href="javascript:selQ('n')">N</a></div>
+<div id="ltabs"><a href="javascript:selQ('o')">O</a></div>
+<div id="ltabs"><a href="javascript:selQ('p')">P</a></div>
+<div id="ltabs"><a href="javascript:selQ('q')">Q</a></div>
+<div id="ltabs"><a href="javascript:selQ('r')">R</a></div>
+<div id="ltabs"><a href="javascript:selQ('s')">S</a></div>
+<div id="ltabs"><a href="javascript:selQ('t')">T</a></div>
+<div id="ltabs"><a href="javascript:selQ('u')">U</a></div>
+<div id="ltabs"><a href="javascript:selQ('v')">V</a></div>
+<div id="ltabs"><a href="javascript:selQ('w')">W</a></div>
+<div id="ltabs"><a href="javascript:selQ('x')">X</a></div>
+<div id="ltabs"><a href="javascript:selQ('y')">Y</a></div>
+<div id="ltabs"><a href="javascript:selQ('z')">Z</a></div>
+</div><div id="rIn"><p id="it" style="margin-top: 10px; color: #222222;">No links in <b>"A"</b>.<br /><br />Click on a <img src="/images/gar.gif" /> graphic to add a link.</p></div>
+    </td>
+  </tr>
+</table>
+</div><!-- End content -->
+<div id="footer"><p><img src="/images/cpy.gif" /></p>
+</div>
+</div><!-- End wrapper -->
+</body>
+</html>

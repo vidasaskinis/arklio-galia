@@ -1,0 +1,60 @@
+*
+{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 10px;
+}
+
+#FMrPlayerDiv 
+{
+	margin: 0 auto;
+	width: 165;
+	padding: 0 0 0 10px;
+}
+
+#FMrControls
+{
+	padding: 1px 0 5px 10px;
+}
+
+#FMrControls a
+{
+	color: #777766;
+	padding: 0 3px;
+	margin-right: -3px;
+	line-height: 1.5;
+	text-decoration: none;
+	background-color: #F0F0DD;
+	border: 1px solid #AAAA99;
+}
+
+#FMrPlaylist
+{
+	overflow: auto;
+	height: 300px;
+}
+
+#FMrPlaylist li,
+#FMrPlaylist ol
+{
+	padding: 0;
+	margin: 0;
+}
+
+#FMrPlaylist a
+{
+	color: #333;
+	display: block;
+	padding: 3px;
+}
+
+#FMrPlaylist a.playing,
+#FMrPlaylist a.playing:hover
+{
+  color: white;
+  background-color: #AAAA99;
+}
+
+#FMrPlaylist a:hover
+{
+	background-color: #F0F0DD;
+}
