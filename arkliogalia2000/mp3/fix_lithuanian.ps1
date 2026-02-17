@@ -113,7 +113,88 @@ $replacements = @(
     @("m$X`n.", "m" + $e_dot + "n."),
     @(("dien" + $X), ("dien" + $a_ogon)),
     @("Valiukevi$X`ius", "Valiukevi" + $caron_s_lo + "ius"),
-    @(($X + ". " + $X + ". Jag" + $e_dot + "la"), ($caron_z_lo + ". " + $caron_z_hi + ". Jag" + $e_dot + "la"))
+    @(($X + ". " + $X + ". Jag" + $e_dot + "la"), ($caron_z_lo + ". " + $caron_z_hi + ". Jag" + $e_dot + "la")),
+    @("Beveik kal" + $X + " koncertas", "Beveik kal" + $e_dot + "dinis koncertas"),
+    @("Beveik kal" + $X + "dinis koncertas", "Beveik kal" + $e_dot + "dinis koncertas"),
+    @("Valiukevi - bosin", "Valiukevi" + $caron_s_lo + "ius - bosin"),
+    @($X + ". liaudies", $caron_z_lo + ". liaudies"),
+    @("m. " + $X + ". Jag", "m. " + $caron_z_lo + ". Jag"),
+    @($X + "unparkis", $caron_z_hi + "unparkis"),
+    @("Karpavi" + $X + "ius", "Karpavi" + [char]0x010D + "ius"),
+    @($X + "io leidinio", $caron_s_hi + "io leidinio"),
+    @("n" + $X + "ra galimyb", "n" + $e_dot + "ra galimyb"),
+    @("galimyb" + $X + "s parsisi", "galimyb" + $e_dot + "s parsisi"),
+    @("ta" + $X + "iau galima", "ta" + [char]0x010D + "iau galima"),
+    @("persira" + $X + "yti i" + $X + " ", "persira" + $caron_s_lo + "yti i" + $caron_s_lo + " "),
+    @("i" + $X + " Tautvydo", "i" + $caron_s_lo + " Tautvydo"),
+    @("i" + $X + " radiostoties", "i" + $caron_s_lo + " radiostoties"),
+    @("Elektrob" + $X + "gninis", "Elektrob" + $u_macron + "gninis"),
+    @("Dain" + $X + " s", "Dain" + $u_ogon + " s"),
+    @("1-6 dain" + $X + " tonacija", "1-6 dain" + $u_ogon + " tonacija"),
+    @("I" + $X + "leidinys", "I" + $caron_s_lo + "leidinys"),
+    @("gerb" + $X + "jui", "gerb" + $e_dot + "jui"),
+    @($X + "tuceriui", $caron_s_lo + "tuceriui"),
+    @("Zdanevi" + $X + "iui", "Zdanevi" + [char]0x010D + "iui"),
+    @("GALI" + $X, "GALI" + $a_ogon),
+    @("Juknevi" + $X + "ius", "Juknevi" + [char]0x010D + "ius"),
+    @("Gimtin" + $X + "s laukai", "Gimtin" + $e_dot + "s laukai"),
+    @("mi" + $X + "ke", "mi" + $caron_s_lo + "ke"),
+    @($X + ". Maironis", $caron_z_lo + ". Maironis"),
+    @("Senas " + $X + "uva", "Senas " + $caron_s_lo + "uo"),
+    @("m. ir " + $X + ". OPUS", "m. ir " + $caron_z_lo + ". OPUS"),
+    @("mir" + $X, "mir" + $e_dot),
+    @("suk" + $X + "iai", "suk" + [char]0x010D + "iai"),
+    @("me" + $X + "k" + $X, "me" + $caron_s_lo + "k" + $a_ogon),
+    @("Bordi" + $X + "ras", "Bord" + $caron_z_lo + "ira" + $caron_s_lo),
+    @("L" + $X + "tas " + $X + "uo", "L" + $e_dot + "tas " + $caron_s_lo + "uo"),
+    @("Storas " + $X + "iuvas", "Storas " + $caron_s_lo + "iuvas"),
+    @("i" + $X + "skyrus", "i" + $caron_s_lo + "skyrus"),
+    @("pri" + $X + "ym" + $X + "ta", "pa" + $caron_z_lo + "ym" + $e_dot + "ta"),
+    @($X + "tampuoti", $caron_s_lo + "tampuoti"),
+    @("pasid" + $X + "ti", "pasid" + $e_dot + "ti"),
+    @($X + "ito kompakto", $caron_s_lo + "ito kompakto"),
+    @("vie" + $X + "ai negalima", "vie" + $caron_s_lo + "ai negalima"),
+    @("Ira" + $X + "yta", "I" + $i_ogon + "ra" + $caron_s_lo + "yta"),
+    @("ira" + $X + "u studijoje", "i" + $i_ogon + "ra" + $caron_s_lo + $u_ogon + " studijoje"),
+    @("pa" + $X + "iais metais", "pa" + [char]0x010D + "iais metais"),
+    @("raid" + $X + "iu", "raid" + $caron_z_lo + $u_ogon),
+    @("B" + $X + "tlegai", "B" + $u_macron + "tlegai"),
+    @("u" + $X + "uot leidusi", "u" + $caron_z_lo + "uot leidusi"),
+    @("visoki" + $X + " nerimt", "visoki" + $u_ogon + " nerimt"),
+    @("nerimt" + $X + " ", "nerimt" + $u_ogon + " "),
+    @("i" + $X + "leido vien", "i" + $caron_s_lo + "leido vien"),
+    @("vien" + $X + " rimt" + $X + ",", "vien" + $a_ogon + " rimt" + $a_ogon + ","),
+    @($X + "iame rinkinyje", $caron_s_hi + "iame rinkinyje"),
+    @($X + "ra" + $X + "ai,", $i_ogon + "ra" + $caron_s_lo + $u_ogon + "ai,"),
+    @($X + "ra" + $X + "yti dar", $i_ogon + "ra" + $caron_s_lo + "yti dar"),
+    @("Rugs" + $X + "jo", "Rugs" + $e_dot + "jo"),
+    @("repeticij" + $X + " sal", "repeticij" + $u_ogon + " sal"),
+    @("sal" + $X + "je ant", "sal" + $e_dot + "je ant"),
+    @("Gerkl" + $X, "Gerkl" + $e_dot),
+    @("klavi" + $X + "iniai", "klavi" + $caron_s_lo + "iniai"),
+    @("ritmin" + $X + " gitara", "ritmin" + $e_dot + " gitara"),
+    @($X + "oka ", $caron_z_lo + "oka "),
+    @("mu" + $X + "amieji", "mu" + $caron_s_lo + "amieji"),
+    @($X + ".Jag", $caron_z_lo + ". Jag"),
+    @($X + ". V.A", $caron_z_lo + ". V.A"),
+    @($X + "ilvin", $caron_z_hi + "ilvin"),
+    @("akustin" + $X + " gitara", "akustin" + $e_dot + " gitara"),
+    @("Parsisi" + $X + "sti", $parsisiusti),
+    @("gadinti " + $X + "ito", "gadinti šito"),
+    @("I" + $X + "ra" + $X + "yta", "Įrašyta"),
+    @("repeticiju ira" + $X + "u ", "repeticiju įrašų "),
+    @("nerimtų " + $X + "ra" + $X + $X + " ", "nerimtų įrašų "),
+    @($X + "iame rinkinyje", "Šiame rinkinyje"),
+    @("įrašųai,", "įrašai,"),
+    @("dainos " + $X + "ra" + $X + "ytos", "dainos " + $i_ogon + "ra" + $caron_s_lo + "ytos"),
+    @($X + ". V. A", $caron_z_lo + ". V. A"),
+    @($X + ".V.A", $caron_z_lo + ".V.A"),
+    @("m. ir " + $X + ". Arklio", "m. ir " + $caron_z_lo + ". Arklio"),
+    @("Jagėla, " + $X + ". V.", "Jagėla, " + $caron_z_lo + ". V."),
+    @("Jagėla, " + $X + ".V.", "Jagėla, " + $caron_z_lo + ".V."),
+    @("Jagėla, " + $X + " V.", "Jagėla, " + $caron_z_lo + " V."),
+    @("Jagėla, " + $X + " V.A", "Jagėla, " + $caron_z_lo + " V.A"),
+    @("Karpavičius, " + $X + ". ž.", "Karpavičius, ž. ž.")
 )
 
 foreach ($r in $replacements) {
@@ -142,6 +223,85 @@ $content = $content -replace "m($R)n\.", ("m" + [char]0x0117 + "n.")
 $content = $content -replace "dien($R)(?=\s|\.|,|\)|$)", ("dien" + [char]0x0105)
 $content = $content -replace "Valiukevi($R)ius", ("Valiukevi" + [char]0x0161 + "ius")
 $content = $content -replace "($R)\. ($R)\. Jag(?:$R|" + [char]0x0117 + ")la", ([char]0x017E + ". " + [char]0x017D + ". Jag" + [char]0x0117 + "la")
+# More 2006-specific patterns
+$content = $content -replace "Beveik kal($R) koncertas", ("Beveik kal" + [char]0x0117 + "dinis koncertas")
+$content = $content -replace "Beveik kal($R)dinis koncertas", ("Beveik kal" + [char]0x0117 + "dinis koncertas")
+$content = $content -replace "Valiukevi - bosin", ("Valiukevi" + [char]0x0161 + "ius - bosin")
+$content = $content -replace "($R)\. liaudies", ([char]0x017E + ". liaudies")
+$content = $content -replace "m\. ($R)\. Jag", ("m. " + [char]0x017E + ". Jag")
+$content = $content -replace "($R)unparkis", ([char]0x017D + "unparkis")
+$content = $content -replace "m\. ir ($R)\. I\.V\.", ("m. ir " + [char]0x017E + ". I.V.")
+$content = $content -replace "Karpavi($R)ius", ("Karpavi" + [char]0x010D + "ius")
+$content = $content -replace "($R)io leidinio", ([char]0x0160 + "io leidinio")
+$content = $content -replace "n($R)ra galimyb", ("n" + [char]0x0117 + "ra galimyb")
+$content = $content -replace "galimyb($R)s parsisi", ("galimyb" + [char]0x0117 + "s parsisi")
+$content = $content -replace "ta($R)iau galima", ("ta" + [char]0x010D + "iau galima")
+$content = $content -replace "persira($R)yti i", ("persira" + [char]0x0161 + "yti i")
+$content = $content -replace "persira($R)yti i($R) ", ("persira" + [char]0x0161 + "yti i" + [char]0x0161 + " ")
+$content = $content -replace " galima gal persira($R)yti i($R) Tautvydo", (" galima gal persira" + [char]0x0161 + "yti i" + [char]0x0161 + " Tautvydo")
+$content = $content -replace "i($R) Tautvydo", ("i" + [char]0x0161 + " Tautvydo")
+$content = $content -replace "i($R) radiostoties", ("i" + [char]0x0161 + " radiostoties")
+$content = $content -replace "tiesiogiai i($R) ", ("tiesiogiai i" + [char]0x0161 + " ")
+$content = $content -replace "Elektrob($R)gninis", ("Elektrob" + [char]0x016B + "gninis")
+$content = $content -replace "($R)ra($R)as tiesiai", ([char]0x012F + "ra" + [char]0x0161 + "as tiesiai")
+$content = $content -replace "Dain($R) s", ("Dain" + [char]0x0173 + " s")
+$content = $content -replace "s($R)ra($R)o autorius", ("s" + [char]0x0105 + "ra" + [char]0x0161 + "o autorius")
+$content = $content -replace "1-6 dain($R) tonacija", ("1-6 dain" + [char]0x0173 + " tonacija")
+$content = $content -replace "I($R)leidinys", ("I" + [char]0x0161 + "leidinys")
+$content = $content -replace "gerb($R)jui", ("gerb" + [char]0x0117 + "jui")
+$content = $content -replace "($R)tuceriui", ([char]0x0161 + "tuceriui")
+$content = $content -replace "Zdanevi($R)iui", ("Zdanevi" + [char]0x010D + "iui")
+$content = $content -replace "v($R)($R)im($R)lis", ("ve" + [char]0x017E + "im" + [char]0x0117 + "lis")
+$content = $content -replace "GALI($R)", ("GALI" + [char]0x0105)
+$content = $content -replace "l($R)p($R) armonik", ("l" + [char]0x016B + "pin" + [char]0x0117 + " armonik")
+$content = $content -replace "armonik($R)l($R),", ("armonik" + [char]0x0117 + "l" + [char]0x0117 + ",")
+$content = $content -replace "armonik($R)l($R) ", ("armonik" + [char]0x0117 + "l" + [char]0x0117 + " ")
+$content = $content -replace "Juknevi($R)ius", ("Juknevi" + [char]0x010D + "ius")
+$content = $content -replace "Gimtin($R)s laukai", ("Gimtin" + [char]0x0117 + "s laukai")
+$content = $content -replace "mi($R)ke", ("mi" + [char]0x0161 + "ke")
+$content = $content -replace "($R)\. Maironis", ([char]0x017E + ". Maironis")
+$content = $content -replace "Senas ($R)uva", ("Senas " + [char]0x0161 + "uo")
+$content = $content -replace "m\. ir ($R)\. OPUS", ("m. ir " + [char]0x017E + ". OPUS")
+$content = $content -replace "mir($R)\b", ("mir" + [char]0x0117)
+$content = $content -replace "suk($R)iai", ("suk" + [char]0x010D + "iai")
+$content = $content -replace "me($R)k($R)", ("me" + [char]0x0161 + "k" + [char]0x0105)
+$content = $content -replace "Bordi($R)ras", ("Bord" + [char]0x017E + "ira" + [char]0x0161)
+$content = $content -replace "L($R)tas ($R)uo", ("L" + [char]0x0117 + "tas " + [char]0x0161 + "uo")
+$content = $content -replace "Storas ($R)iuvas", ("Storas " + [char]0x0161 + "iuvas")
+$content = $content -replace "i($R)skyrus", ("i" + [char]0x0161 + "skyrus")
+$content = $content -replace "pri($R)ym($R)ta", ("pa" + [char]0x017E + "ym" + [char]0x0117 + "ta")
+$content = $content -replace "($R)tampuoti", ([char]0x0161 + "tampuoti")
+$content = $content -replace "pasid($R)ti", ("pasid" + [char]0x0117 + "ti")
+$content = $content -replace "($R)ito kompakto", ([char]0x0161 + "ito kompakto")
+$content = $content -replace "vie($R)ai negalima", ("vie" + [char]0x0161 + "ai negalima")
+$content = $content -replace "Ira($R)yta", ("I" + [char]0x012F + "ra" + [char]0x0161 + "yta")
+$content = $content -replace "ira($R)u studijoje", ("i" + [char]0x012F + "ra" + [char]0x0161 + [char]0x0173 + " studijoje")
+$content = $content -replace "ira($R)ai", ("I" + [char]0x012F + "ra" + [char]0x0161 + "ai")
+$content = $content -replace "pa($R)iais metais", ("pa" + [char]0x010D + "iais metais")
+$content = $content -replace "raid($R)iu", ("raid" + [char]0x017E + [char]0x0173)
+$content = $content -replace "B($R)tlegai", ("B" + [char]0x016B + "tlegai")
+$content = $content -replace "u($R)uot leidusi", ("u" + [char]0x017E + "uot leidusi")
+$content = $content -replace "visoki($R) nerimt", ("visoki" + [char]0x0173 + " nerimt")
+$content = $content -replace "nerimt($R) ", ("nerimt" + [char]0x0173 + " ")
+$content = $content -replace "i($R)leido vien", ("i" + [char]0x0161 + "leido vien")
+$content = $content -replace "vien($R) rimt($R),", ("vien" + [char]0x0105 + " rimt" + [char]0x0105 + ",")
+$content = $content -replace "($R)iame rinkinyje", ([char]0x0160 + "iame rinkinyje")
+$content = $content -replace "($R)ra($R)ai,", ([char]0x012F + "ra" + [char]0x0161 + [char]0x0173 + "ai,")
+$content = $content -replace "($R)ra($R)yti dar", ([char]0x012F + "ra" + [char]0x0161 + "yti dar")
+$content = $content -replace "Rugs($R)jo", ("Rugs" + [char]0x0117 + "jo")
+$content = $content -replace "repeticij($R) sal", ("repeticij" + [char]0x0173 + " sal")
+$content = $content -replace "sal($R)je ant", ("sal" + [char]0x0117 + "je ant")
+$content = $content -replace "Gerkl($R)", ("Gerkl" + [char]0x0117)
+$content = $content -replace "klavi($R)iniai", ("klavi" + [char]0x0161 + "iniai")
+$content = $content -replace "ritmin($R) gitara", ("ritmin" + [char]0x0117 + " gitara")
+$content = $content -replace "($R)oka ", ([char]0x017E + "oka ")
+$content = $content -replace "mu($R)amieji", ("mu" + [char]0x0161 + "amieji")
+$content = $content -replace "($R)\.Jag", ([char]0x017E + ". Jag")
+$content = $content -replace "($R)\. V\.A", ([char]0x017E + ". V.A")
+$content = $content -replace "($R)ilvin", ([char]0x017D + "ilvin")
+$content = $content -replace "akustin($R) gitara", ("akustin" + [char]0x0117 + " gitara")
+$content = $content -replace "Parsisi($R)sti", ("Parsisi" + [char]0x0173 + "sti")
+$content = $content -replace "Jag" + [char]0x0117 + "la, ($R) V\.", ("Jag" + [char]0x0117 + "la, " + [char]0x017E + ". V.")
 
 # Fix the ASCII placeholders to proper Lithuanian
 $content = $content.Replace("Saruno vezimelis", $Saruno_vezimelis)
@@ -152,6 +312,8 @@ $content = $content.Replace("As Negerau", $As_Negerau)
 $content = $content.Replace("Zemes Uztemimas", $Zemes_Uztemimas)
 $content = $content.Replace("Saldytuve", $Saldytuve)
 $content = $content.Replace("Isvarymo daina", $Isvarymo)
+
+$content = $content.Replace("įrašųai,", "įrašai,")
 
 # Fix wrong uppercase in middle of sentence (e.g. iS instead of is, RadviliSkio instead of Radviliškio)
 $content = $content.Replace("Milda i" + $caron_s_hi + " Radvili" + $caron_s_hi + "kio", $Milda_is)
