@@ -194,10 +194,67 @@ $replacements = @(
     @("Jagėla, " + $X + ".V.", "Jagėla, " + $caron_z_lo + ".V."),
     @("Jagėla, " + $X + " V.", "Jagėla, " + $caron_z_lo + " V."),
     @("Jagėla, " + $X + " V.A", "Jagėla, " + $caron_z_lo + " V.A"),
-    @("Karpavičius, " + $X + ". ž.", "Karpavičius, ž. ž.")
+    @("Karpavičius, " + $X + ". ž.", "Karpavičius, ž. ž."),
+    # Aškinis (V.Aškinis, Aškinis)
+    @("V.A" + $X + "kinis", "V.A" + $caron_s_lo + "kinis"),
+    @("A" + $X + "kinis", "A" + $caron_s_lo + "kinis"),
+    @("V.A" + $X + "kinio", "V.A" + $caron_s_lo + "kinio"),
+    # m. ir X. X. Jag / ?. X. Jag (lyricist credits)
+    @("m. ir " + $X + ". " + $X + ". Jag", "m. ir " + $caron_z_lo + ". " + $caron_z_hi + ". Jag"),
+    @("?. " + $X + ". Jag", $caron_z_lo + ". " + $caron_z_hi + ". Jag"),
+    @($X + ". ?. Jag", $caron_z_lo + ". " + $caron_z_hi + ". Jag"),
+    # z + X + kinis (z. V. Aškinis)
+    @($caron_z_lo + $X + "kinis", $caron_z_lo + ". V. A" + $caron_s_lo + "kinis"),
+    # I + X + ra + X + yta, i + X + ra + X + X (įrašyta, įrašų)
+    @("I" + $X + "ra" + $X + "yta", [char]0x012F + "ra" + $caron_s_lo + "yta"),
+    @("i" + $X + "ra" + $X + $X + " ", [char]0x012F + "ra" + $caron_s_lo + $u_ogon + " "),
+    # raid + X + X (raidžių)
+    @("raid" + $X + $X, "raid" + $caron_z_lo + $u_ogon)
+)
+
+# Fix literal ? placeholders (used when char couldn't be encoded)
+$qReplacements = @(
+    @("i?leistas", "i" + $caron_s_lo + "leistas"),
+    @("atsine?tos", "atsine" + $caron_s_lo + "tos"),
+    @("i? ankstesni", "i" + $caron_s_lo + " ankstesni"),
+    @("u?sienieti?ka", "u" + $caron_z_lo + "sienieti" + $caron_s_lo + "ka"),
+    @("i?versta", "i" + $caron_s_lo + "versta"),
+    @("lietuvi?kai", "lietuvi" + $caron_s_lo + "kai"),
+    @("?. T.Augustinas", $caron_z_lo + ". T.Augustinas"),
+    @("?. V. A", $caron_z_lo + ". V. A"),
+    @("?.V.A", $caron_z_lo + ".V.A"),
+    @("?.V.A", $caron_z_lo + ".V.A"),
+    @("aran?uot", "aran" + $caron_z_lo + "uot"),
+    @("V.A?kinio", "V.A" + $caron_s_lo + "kinio"),
+    @("i?skyr", "i" + $caron_s_lo + "skyr"),
+    @("nepa?intas", "nepa" + $caron_z_lo + "intas"),
+    @("visi?kai", "visi" + $caron_s_lo + "kai"),
+    @("neprana?auja", "neprana" + $caron_s_lo + "auja"),
+    @("U?sived", "U" + $caron_z_lo + "sived"),
+    @("?vaig?d?i", $caron_z_lo + "vaig" + $caron_z_lo + "d" + $caron_z_lo + "i"),
+    @("A? neg", "A" + $caron_s_lo + " neg"),
+    @("?em" + $e_dot + "s", $caron_z_hi + "em" + $e_dot + "s"),
+    @("u?temimas", "u" + $caron_z_lo + "temimas"),
+    @("?od?iai", $caron_z_lo + "od" + $caron_z_lo + "iai"),
+    @("vir?elio", "vir" + $caron_s_lo + "elio"),
+    @("Vir?elio", "Vir" + $caron_s_lo + "elio"),
+    @("i? knygos", "i" + $caron_s_lo + " knygos"),
+    @("vie?ai", "vie" + $caron_s_lo + "ai"),
+    @("A? TAVE", "A" + $caron_s_lo + " TAVE"),
+    @("A? Tave", "A" + $caron_s_lo + " Tave"),
+    @("D?" + $e_dot + "s" + $e_dot, "D" + $caron_z_lo + $e_dot + "s" + $e_dot),
+    @("?. Jolantos", $caron_z_lo + ". Jolantos"),
+    @("A?kinyt", "A" + $caron_s_lo + "kinyt"),
+    @("Mir" + $e_dot + " ?uo", "Mir" + $e_dot + " " + $caron_s_lo + "uo"),
+    @("L" + $e_dot + "tas ?uo", "L" + $e_dot + "tas " + $caron_s_lo + "uo"),
+    @("Tr" + $a_ogon + "?os", "Tr" + $a_ogon + $caron_s_lo + "os"),
+    @("?. ?ar" + $u_ogon + "nas", $caron_z_lo + ". " + $caron_s_hi + "ar" + $u_ogon + "nas")
 )
 
 foreach ($r in $replacements) {
+    $content = $content.Replace($r[0], $r[1])
+}
+foreach ($r in $qReplacements) {
     $content = $content.Replace($r[0], $r[1])
 }
 
@@ -303,6 +360,27 @@ $content = $content -replace "($R)ilvin", ([char]0x017D + "ilvin")
 $content = $content -replace "akustin($R) gitara", ("akustin" + [char]0x0117 + " gitara")
 $content = $content -replace "Parsisi($R)sti", ("Parsisi" + [char]0x0173 + "sti")
 $content = $content -replace "Jag" + [char]0x0117 + "la, ($R) V\.", ("Jag" + [char]0x0117 + "la, " + [char]0x017E + ". V.")
+$content = $content -replace "V\.A($R)kinis", ("V.A" + [char]0x0161 + "kinis")
+$content = $content -replace "A($R)kinis", ("A" + [char]0x0161 + "kinis")
+$content = $content -replace "V\.A($R)kinio", ("V.A" + [char]0x0161 + "kinio")
+$content = $content -replace ([char]0x017E + "($R)kinis"), ([char]0x017E + ". V. A" + [char]0x0161 + "kinis")
+$content = $content -replace "I($R)ra($R)yta", ([char]0x012F + "ra" + [char]0x0161 + "yta")
+$content = $content -replace "i($R)ra($R)($R) ", ([char]0x012F + "ra" + [char]0x0161 + [char]0x0173 + " ")
+$content = $content -replace "raid($R)($R)(?=\s|\.|,|<|$)", ("raid" + [char]0x017E + "i" + [char]0x0173)
+# albums.html: ir X. X. Jag, ir X. ?. Jag, X. Jagėla, X. T.Augustinas, X. Arklio, pas Xilvin
+$content = $content -replace "m\. ir ($R)\. ($R)\. Jag", ("m. ir " + [char]0x017E + ". " + [char]0x017D + ". Jag")
+$content = $content -replace "m\. ir ($R)\. \?\. Jag", ("m. ir " + [char]0x017E + ". " + [char]0x017D + ". Jag")
+$content = $content -replace "ir ($R)\. ($R)\. Jag", ("ir " + [char]0x017E + ". " + [char]0x017D + ". Jag")
+$content = $content -replace "ir ($R)\. \?\. Jag", ("ir " + [char]0x017E + ". " + [char]0x017D + ". Jag")
+$content = $content -replace "\(m\. ($R)\. Jag", ("(m. " + [char]0x017E + ". Jag")
+$content = $content -replace "ir ($R)\. T\.Augustinas", ("ir " + [char]0x017D + ". T.Augustinas")
+$content = $content -replace "ir ($R)\. Arklio", ("ir " + [char]0x017D + ". Arklio")
+$content = $content -replace "($R)\. Jag" + [char]0x0117 + "la", ([char]0x017D + ". Jag" + [char]0x0117 + "la")
+$content = $content -replace "($R)\. Jag" + [char]0x0117 + "los", ([char]0x017D + ". Jag" + [char]0x0117 + "los")
+$content = $content -replace "pas ($R)ilvin($R) ", ("pas " + [char]0x017D + "ilvin" + [char]0x0105 + " ")
+$content = $content -replace "pas ($R)ilvin", ("pas " + [char]0x017D + "ilvin")
+$content = $content -replace "Milda i($R) Radvili", ("Milda i" + [char]0x0161 + " Radvili")
+$content = $content -replace "Radvili($R)kio", ("Radvili" + [char]0x0161 + "kio")
 
 # Fix the ASCII placeholders to proper Lithuanian
 $content = $content.Replace("Saruno vezimelis", $Saruno_vezimelis)
