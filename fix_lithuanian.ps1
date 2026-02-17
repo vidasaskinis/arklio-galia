@@ -203,6 +203,7 @@ foreach ($r in $replacements) {
 
 # Update charset to utf-8
 $content = $content.Replace("charset=windows-1257", "charset=utf-8")
+$content = $content.Replace("charset=iso-8859-1", "charset=utf-8")
 
 # Regex fallback for any remaining U+FFFD patterns (match replacement char)
 $R = "[\uFFFD]"
@@ -318,5 +319,6 @@ $content = $content.Replace("įrašųai,", "įrašai,")
 # Fix wrong uppercase in middle of sentence (e.g. iS instead of is, RadviliSkio instead of Radviliškio)
 $content = $content.Replace("Milda i" + $caron_s_hi + " Radvili" + $caron_s_hi + "kio", $Milda_is)
 
+$enc = [System.Text.Encoding]::UTF8
 [System.IO.File]::WriteAllText($path, $content, $enc)
 Write-Host "Done. Fixed Lithuanian encoding in mp3.htm"
