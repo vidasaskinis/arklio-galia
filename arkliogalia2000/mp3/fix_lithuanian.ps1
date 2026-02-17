@@ -1,7 +1,6 @@
-# Fix corrupted Lithuanian chars (U+FFFD) in mp3.htm - ONLY link/body text, NOT href or src
-# All strings built with [char] to avoid script encoding issues
-
-$path = Join-Path $PSScriptRoot "mp3.htm"
+# Fix corrupted Lithuanian chars (U+FFFD) - ONLY link/body text, NOT href or src
+param([string]$FilePath)
+$path = if ($FilePath) { (Resolve-Path $FilePath).Path } else { Join-Path $PSScriptRoot "mp3.htm" }
 $enc = [System.Text.Encoding]::UTF8
 $content = [System.IO.File]::ReadAllText($path, $enc)
 
@@ -107,7 +106,14 @@ $replacements = @(
     @("2005 met$X` demo", "2005 met" + [char]0x0173 + " demo"),
     @("Eigminien$X`s pirtel$X`j", $Eigminienes),
     @("Milda i$X` Radvili$X`kio", $Milda_is),
-    @("ie$X`kokit", $ieskokit)
+    @("ie$X`kokit", $ieskokit),
+    @("kal$X`dinis", "kal" + $e_dot + "dinis"),
+    @(("met" + $X), ("met" + $u_ogon)),
+    @("Gruod$X`io", "Gruod" + $caron_z_lo + "io"),
+    @("m$X`n.", "m" + $e_dot + "n."),
+    @(("dien" + $X), ("dien" + $a_ogon)),
+    @("Valiukevi$X`ius", "Valiukevi" + $caron_s_lo + "ius"),
+    @(($X + ". " + $X + ". Jag" + $e_dot + "la"), ($caron_z_lo + ". " + $caron_z_hi + ". Jag" + $e_dot + "la"))
 )
 
 foreach ($r in $replacements) {
@@ -129,6 +135,13 @@ $content = $content -replace "A($R) Neg($R)riau", "As Negerau"
 $content = $content -replace "($R)em($R)s U($R)temimas", "Zemes Uztemimas"
 $content = $content -replace "($R)aldytuve", "Saldytuve"
 $content = $content -replace "I($R)varymo daina", "Isvarymo daina"
+$content = $content -replace "kal($R)dinis", ("kal" + [char]0x0117 + "dinis")
+$content = $content -replace "met($R)(?=\s|\.|,|\)|$)", ("met" + [char]0x0173)
+$content = $content -replace "Gruod($R)io", ("Gruod" + [char]0x017E + "io")
+$content = $content -replace "m($R)n\.", ("m" + [char]0x0117 + "n.")
+$content = $content -replace "dien($R)(?=\s|\.|,|\)|$)", ("dien" + [char]0x0105)
+$content = $content -replace "Valiukevi($R)ius", ("Valiukevi" + [char]0x0161 + "ius")
+$content = $content -replace "($R)\. ($R)\. Jag(?:$R|" + [char]0x0117 + ")la", ([char]0x017E + ". " + [char]0x017D + ". Jag" + [char]0x0117 + "la")
 
 # Fix the ASCII placeholders to proper Lithuanian
 $content = $content.Replace("Saruno vezimelis", $Saruno_vezimelis)
