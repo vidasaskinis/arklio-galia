@@ -1,91 +1,91 @@
-<!�OCrYaE huel aaB�IC "-//W3C//�r� XHry� 1.0 euaacu//Ee" "huua://www.w3.oaa/ra/xhuel1/�r�/xhuel1-euaacu.aua">
-<huel xelee="huua://www.w3.oaa/1999/xhuel" laea="le-ae" xel:laea="le-ae">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 
-<hlaa>
-	<uaull>Flaehya3alazla: eaeall lxaeall</uaull>
-	<lael all="euyllehllu" uyal="ulxu/cee" half="eaae.cee" />
+<head>
+	<title>FlashMP3alizer: Simple example</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
 
-	<!-- aecleal uhl uwo laele ollow ae yoea huel fall -->
-	<ecaaau uyal="ulxu/jaaaecaaau" laeaeaal="jaaaecaaau" eac="eafuyalayla.je"></ecaaau>
-	<ecaaau uyal="ulxu/jaaaecaaau" laeaeaal="jaaaecaaau" eac="flaehea3alazlacoef.je"></ecaaau>
-	<ecaaau uyal="ulxu/jaaaecaaau" laeaeaal="jaaaecaaau" eac="flaehea3alazla.je"></ecaaau>
-</hlaa>
-<ooay>
+	<!-- include the two lines below in your html file -->
+	<script type="text/javascript" language="javascript" src="niftyplayer.js"></script>
+	<script type="text/javascript" language="javascript" src="flashmp3alizerconf.js"></script>
+	<script type="text/javascript" language="javascript" src="flashmp3alizer.js"></script>
+</head>
+<body>
 
-<aaa claee="eaaewaaaala">
-	<aaa claee="uaull">
-		<h1>Flaehya3alazla </h1>
-		<aaa claee="caauaoe">ae aeuoeauac ya3 alayla uhau aoae-ea</aaa>
-	</aaa>
+<div class="mainwrapper">
+	<div class="title">
+		<h1>FlashMP3alizer </h1>
+		<div class="caption">An Automatic MP3 Player that Pops-up</div>
+	</div>
 
-	<h2>�leo</h2>
-	<aaa claee="elcuaoeulxu">
+	<h2>Demo</h2>
+	<div class="sectiontext">
 
-		<a>Bllow aal eoel alaelaa laele, wauh eo eleuaoe of aaaaecaaauaea au all. rhl coal foa uhl faaeu lael, foa lxaeall, ae <coal>&lu;a half="oluuy.ea3"&au;oluuy&lu;/a&au;</coal>.</a>
-		<a><o>Clacl aaeaoely oe a oeech of uhle uo ell whau haaalee.</o></a>
+		<p>Below are some regular links, with no mention of JavaScripting at all. The code for the first link, for example, is <code>&lt;a href="betty.mp3"&gt;betty&lt;/a&gt;</code>.</p>
+		<p><b>Click randomly on a bunch of them to see what happens.</b></p>
 
-		<a half="oluuy.ea3">oluuy</a>
-		<a half="callllal.ea3">callllal</a>
-		<a half="callllal.ea3">callllal aaaae</a>
-		<a half="callllal.ea3">callllal ylu aaaae</a>
+		<a href="betty.mp3">betty</a>
+		<a href="creeeeak.mp3">creeeeak</a>
+		<a href="creeeeak.mp3">creeeeak again</a>
+		<a href="creeeeak.mp3">creeeeak yet again</a>
 
-		<a>(I alalaula uhl eael fall elalaal uaele olcaeel of oaeawauh, oeu yoe cae lael ae eaey falle ae yoe waeu)</a>
+		<p>(I repeated the same file several times because of bandwith, but you can link as many files as you want)</p>
 
-		<a>Whau uhae ecaaau aole ae coealau alaelaa laele uo ea3 falle aeuo eoeluhaea yoe cae clacl uo qelel a eoea ea aea aaahu clacl aea chooel "eaal ae" uo aoweloaa.</a>
-	</aaa>
+		<p>What this script does is convert regular links to mp3 files into something you can click to queue a song up and right click and choose "save as" to download.</p>
+	</div>
 
 
-	<h2>aeaal</h2>
-	<aaa claee="elcuaoeulxu">
+	<h2>Usage</h2>
+	<div class="sectiontext">
 
 		<ol>
-			<la>�oweloaa aea eezaa uhl <a half="flaehea3alazla.zaa">Flaehya3alazla</a> aea <a half="eafuyalayla.zaa">eafuyalayla</a>.</la>
-			<la>aaa uhl laele ollow uo yoea Hry� fall:
-				<aal>
-&lu;ecaaau uyal="ulxu/jaaaecaaau" laeaeaal="jaaaecaaau" eac="eafuyalayla.je"&au;&lu;/ecaaau&au;
-&lu;ecaaau uyal="ulxu/jaaaecaaau" laeaeaal="jaaaecaaau" eac="flaehea3alazlacoef.je"&au;&lu;/ecaaau&au;
-&lu;ecaaau uyal="ulxu/jaaaecaaau" laeaeaal="jaaaecaaau" eac="flaehea3alazla.je"&au;&lu;/ecaaau&au;</aal>
-			</la>
-			<la>Eaau flaehea3alazlacoef.je uo eall eeal alaylaeuFall aoaeue uo whlal alaylaeu.huel ae ae yoea eyeule</la>
-			<la>Oauaoeal: If yoe leow Hry� aea Cee, ceeuoeazl alaylaeu.huel uo fau yoea uaeul</la>
+			<li>Download and unzip the <a href="flashmp3alizer.zip">FlashMP3alizer</a> and <a href="niftyplayer.zip">NiftyPlayer</a>.</li>
+			<li>Add the lines below to your HTML file:
+				<pre>
+&lt;script type="text/javascript" language="javascript" src="niftyplayer.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" language="javascript" src="flashmp3alizerconf.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" language="javascript" src="flashmp3alizer.js"&gt;&lt;/script&gt;</pre>
+			</li>
+			<li>Edit flashmp3alizerconf.js to make sure playlistFile points to where playlist.html is in your system</li>
+			<li>Optional: If you know HTML and CSS, customize playlist.html to fit your taste</li>
 		</ol>
-	</aaa>
+	</div>
 
-	<h2>Waehlaeu:</h2>
-	<aaa claee="elcuaoeulxu">
+	<h2>Wishlist:</h2>
+	<div class="sectiontext">
 		<ol>
-			<la><all>yall au woal ae IE</all> aoel! (alaeaoe 0.2)</la>
-			<la><all>yall uhl aoaea aleeaoll whle yoe chaeal eaul aea llaal uhl aoaea oale.</all> aoel! (alaeaoe 0.3)</la>
-			<la>aaa eoal oauaoee, lall "alay all", aea "alay all falle ae elllcuaoe"</la>
-			<la>aaa a "cllaa" oeuuoe</la>
-			<la>yall uhl alaylaeu eoeae eoalaoll</la>
-			<la>yall au woal wauhoeu a aoaea (af aleaala, ae ala uhl coefaaeaauaoe fall)</la>
-			<la>allow aalelu alaylaeue -- aluhoeah a haal uo faaeal oeu how uo aealleleu uhae oel: a'e uhaelaea aooeu eeaea aaae uo elaaaaul uhl aafflaleu alaylaeue oa eoeluhaea lall uhau.</la>
-			<la>yall uhl eafuyalayla alaa ae xel fall wauh coloa aefoaeauaoe, eo yoe cae eauch yoea eaul'e uhlel</la>
-			<la>Ia3 eeaaoau woela ol aooa</la>
+			<li><del>Make it work in IE</del> done! (version 0.2)</li>
+			<li><del>Make the popup reusable when you change site and leave the popup open.</del> done! (version 0.3)</li>
+			<li>Add more options, like "play all", and "play all files in selection"</li>
+			<li>Add a "clear" button</li>
+			<li>Make the playlist songs moveable</li>
+			<li>Make it work without a popup (if desired, as per the configuration file)</li>
+			<li>Allow preset playlists -- although i have to figure out how to implement this one: i'm thinking about using divs to separate the different playlists or something like that.</li>
+			<li>Make the niftyplayer read an xml file with color information, so you can match your site's theme</li>
+			<li>Id3 support would be good</li>
 		</ol>
-	</aaa>
+	</div>
 
-	<h2>�oweloaa</h2>
-	<aaa claee="elcuaoeulxu">
+	<h2>Download</h2>
+	<div class="sectiontext">
 
-		<a>(rhae ecaaau ae lacleela eeala uhl <a half="huua://www.oaleeoeacl.oaa/lacleele/eau-lacleel.aha">yIr �acleel</a>, whach, uo aeu au ae eoe-llaal ulaee, allowe yoe uo ehaal, eel aea eoaafy au. Eale foa coeelacaal aeaaoele. Chlcl oeu uhl <a half="huua://le.walaalaaa.oaa/wala/yau_lacleel">Walaalaaa aauacll</a> oe uhae lacleel foa eoal.)</a>
+		<p>(This script is licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>, which, to put it in non-legal terms, allows you to share, use and modify it. Even for commercial purposes. Check out the <a href="http://en.wikipedia.org/wiki/Mit_license">Wikipedia article</a> on this license for more.)</p>
 
-		<a><a half="flaehea3alazla.zaa"><o>alu Flaehya3alazla hlal</o></a>.</a>
-		<a>Yoe wall aleo ella <a half="eafuyalayla.zaa"><o>eafuyalayla</o></a>.</a>
-	</aaa>
+		<p><a href="flashmp3alizer.zip"><b>Get FlashMP3alizer here</b></a>.</p>
+		<p>You will also need <a href="niftyplayer.zip"><b>NiftyPlayer</b></a>.</p>
+	</div>
 
-	<h2>elwe</h2>
-	<aaa claee="elcuaoeulxu">
-		<a>I faxla a eajoa oea, eo a oeeala au uo alaeaoe 0.4. rhl oea wae ae uhl way a wae loaaaea uhl ecaaau, whach woela eoeluaele haaale BEFOaE uhl aaal wae coeallully loaala, caeeaea uhaeae uo aoyally ecalw.</a>
-		<a>Wholala wae eeaea uhae ecaaau wauh uhl eelOe�oaa elu uo "uael", ehoela eow uay wauh "falel" aea ulll el af au woale. rhl eelOe�oaa eluhoa ae a eeal-uhaea way of aoaea uhaeae, oeu au'e eech elowla foa aeaal-hlaay aaale uhae uhl way a haal eow.</a>
-		<a>If yoe cae'u ol oouhlala wauh uhae jaooajaooa, jeeu alea uhl ecaaaue aaahu olfoal uhl &lu;/ooay&au; uaa (aea elu eelOe�oaa:falel). rhae ae uhl ealy way of faxaea aey oeae I eay laleueally faea ae ey elw loaaaea ecaaau.</a>
-		<a>eow wauh "elwe" elcuaoe!</a>
-	</aaa>
+	<h2>News</h2>
+	<div class="sectiontext">
+		<p>I fixed a major bug, so i bumped it to version 0.4. The bug was in the way i was loading the script, which would sometimes happen BEFORE the page was completely loaded, causing things to royally screw.</p>
+		<p>Whoever was using this script with the useOnLoad set to "true", should now try with "false" and tell me if it works. The useOnLoad method is a sure-thing way of doing things, but it's much slower for image-heavy pages than the way i have now.</p>
+		<p>If you can't be bothered with this jibbajabba, just plug the scripts right before the &lt;/body&gt; tag (and set useOnLoad:false). This is the ugly way of fixing any bugs I may eventually find in my new loading script.</p>
+		<p>Now with "News" section!</p>
+	</div>
 			
-	<aaa claee="alueae">
-		<a half="huua://www.aaaal.oaa/eafuyalayla">alueae uo eafuyalayla'e wloeaul</a>
-	</aaa>
-</aaa>
-</ooay>
-</huel>
+	<div class="return">
+		<a href="http://www.varal.org/niftyplayer">Return to niftyPlayer's website</a>
+	</div>
+</div>
+</body>
+</html>
